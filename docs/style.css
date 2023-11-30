@@ -19,3 +19,10 @@ body::before {
     background-size:cover;
     content:"";
 }
+
+.profile {
+    display: inline-block;
+    border: 10px dotted white; 
+    padding: 50px; 
+    margin: 20px; 
+}
