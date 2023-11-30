@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('/docs/index.html').send('<p>動作1</p>');
 })
 
+app.get('/docs/test.html', (req, res) => {
+  res.send('/docs/index.html').send('<p>動作1</p>');
+})
+
 app.use(function(req, res, next) {
   res.status(404).send('/docs/404.html').send('<p>動作2</p>');
 

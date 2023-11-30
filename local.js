@@ -13,7 +13,7 @@ app.listen(8080, () => {
 });
 
 // 静的ファイルのルーティング
-app.use(express.static(path.join(__dirname, 'docs')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // その他のリクエストに対する404エラー
 app.use((req, res) => {
