@@ -5,3 +5,7 @@ const app = express()
 app.get('/', (req, res) => {
   res.send('/docs')
 })
+
+app.use(function(req, res, next) {
+  res.status(404).send('/docs/404.html');
+});
