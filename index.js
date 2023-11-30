@@ -10,3 +10,8 @@ app.use(function(req, res, next) {
   res.status(404).send('/docs/404.html').send('動作2');
 
 });
+
+app.get('/docs/danger.html',(req,res) => {
+  res.status(404).send('/docs/404.html').send('動作3');
+
+});
