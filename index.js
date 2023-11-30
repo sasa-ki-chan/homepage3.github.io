@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.use(function(req, res, next) {
-  res.status(404).send('/docs/404.html');
+  res.status(404).send('/docs/404page.html');
 });
