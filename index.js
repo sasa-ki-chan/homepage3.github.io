@@ -3,7 +3,7 @@ const app = express()
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', (req, res) => {
-  res.send('/docs/index.html').send('<p>動作1</p>');
+  res.send('/docs').send('<p>動作1</p>');
 })
 
 app.get('/docs/test.html', (req, res) => {
@@ -19,3 +19,5 @@ app.get('/docs/danger.html',(req,res) => {
   res.status(404).send('/docs/404.html').send('<p>動作3</p>');
 
 });
+
+module.exports = app;

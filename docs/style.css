@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     color:white;
   }
 
@@ -22,7 +22,67 @@ body::before {
 
 .profile {
     display: inline-block;
-    border: 10px dotted white; 
-    padding: 50px; 
-    margin: 20px; 
+    border: 7px dotted white; 
+    padding: 5px; 
+    margin: 5px; 
+    max-width: 100%;
+    height: auto;
+    font-size: 2vh;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 50px;
+  }
+
+  .social-icons a {
+    color: white; 
+    transition: color 0.3s ease; 
+  }
+
+  .social-icons a:hover {
+    color: purple; 
+  }
+
+.homepage-name{
+    font-size: 3vw;
+}
+
+.rotatable-image {
+    transition: transform 0.3s ease;
+}
+
+.rotatable-image:hover {
+    transform: scale(0.9);
+}
+
+.rotatable-image:active {
+    animation: rotate 0.3s linear infinite;
+    transition: 0.5s;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media ( max-width: 768px ){
+    
+    .img-size {
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+    }
+
+    .homepage-name{
+        font-size: 5vw;
+    }
+
+}
+    
