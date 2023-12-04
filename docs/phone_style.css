@@ -19,7 +19,7 @@ body::before {
     
     -webkit-background-size:cover;
     background-size:cover;
-    background-position: top center;
+    background-position: top right;
     content:"";
 }
 
