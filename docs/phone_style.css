@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    color:white;
+    justify-content: center;
+    align-items: center;
+  }
+
+body::before {
+    display: block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(to bottom, rgb(47, 145, 158, 0.5),rgb(167, 51, 167,0.5)), url("image/background.png");
+    
+    -webkit-background-size:cover;
+    background-size:cover;
+    content:"";
+}
+
+.profile {
+    display: inline-block;
+    border: 7px dotted white; 
+    padding: 5px; 
+    margin: 5px; 
+    max-width: 100%;
+    height: auto;
+    font-size: 2vh;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 50px;
+  }
+
+  .social-icons a {
+    color: white; 
+    transition: color 0.3s ease; 
+  }
+
+  .social-icons a:hover {
+    color: purple; 
+  }
+
+.homepage-name{
+    font-size: 3vw;
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  padding-top: 20px;
+} 
+
+
+.menu-button {
+  justify-content: center;
+}
+
+@media ( max-width: 768px ){
+    
+  .img-size {
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+  }
+
+  .homepage-name{
+    font-size: 5vw;
+  }
+
+  .social-icons{
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    font-size: 5vw;
+  }
+
+}
